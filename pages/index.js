@@ -16,6 +16,7 @@ export default function HomePage() {
   const bmadABI = bmad_abi.abi;
 
   const getWallet = async () => {
+    if (account) return;
     if (window.ethereum) {
       setEthWallet(window.ethereum);
     }
@@ -69,7 +70,7 @@ export default function HomePage() {
 
   const deposit = async () => {
     if (bmad) {
-      let tx = await bmad.deposit(name, message, Number(amount));
+      let tx = await bmad.buyDrink(name, message, Number(amount), { value: 0 });
       await tx.wait();
       getBalance();
     }
@@ -130,7 +131,7 @@ export default function HomePage() {
             notes.map((note) => (
               <li>
                 Address {note[0]} with name {note[2]} bought a drink of{" "}
-                {note[1]} with the message {note[3]}
+                {note[1].toNumber()} with the message {note[3]}
               </li>
             ))}
         </ol>
@@ -140,7 +141,8 @@ export default function HomePage() {
 
   useEffect(() => {
     getWallet();
-  }, []);
+    getBalance();
+  }, [balance]);
 
   return (
     <main className="container">

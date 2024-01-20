@@ -38,6 +38,8 @@ contract BuyMeADrink {
         // Add the memo to storage!
         notes.push(Note(msg.sender, _amount, _name, _message));
 
+        balance += _amount;
+
         // Emit a NewNote event with details about the Note.
         emit NewNote(msg.sender, block.timestamp, _name, _message, _amount);
     }
