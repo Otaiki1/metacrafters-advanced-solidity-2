@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a "Buy Me a Drink" smart contract on the Ethereum blockchain. Users can contribute funds to the contract with personalized messages, view all transactions, and withdraw the collected funds.
+This project implements a "Buy Me a Drink" smart contract on the  blockchain. Users can contribute funds to the contract with personalized messages, view all transactions, and withdraw the collected funds.
 
 ## Getting Started
 
