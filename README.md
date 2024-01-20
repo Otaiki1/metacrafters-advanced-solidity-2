@@ -1,4 +1,18 @@
-# Starter Next/Hardhat Project
+# Buy Me a Drink Platform
+
+## Description
+
+This project implements a "Buy Me a Drink" smart contract on the Ethereum blockchain. Users can contribute funds to the contract with personalized messages, view all transactions, and withdraw the collected funds.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- Metamask browser extension
+
+### Installation
 
 After cloning the github, you will want to do the following to get the code running on your computer.
 
@@ -10,3 +24,22 @@ After cloning the github, you will want to do the following to get the code runn
 
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
+
+## Usage
+
+1. Connect your Metamask wallet to the dApp( on local host network).
+2. Enter your name, message, and the amount you want to contribute.
+3. Click "Buy me a drink" to contribute funds with a personalized message.
+4. Click "Withdraw all drinks money" to withdraw all funds.
+5. Click "View all Memos" to see a list of all contributions with names, amounts, and messages.
+
+## Authors
+
+Otaiki Sadiq  
+
+## License
+
+This project is licensed under the unlicensed License 
+
+
+
